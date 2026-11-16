@@ -1,4 +1,4 @@
-FROM golang:1.23.4-alpine AS builder
+FROM golang:1.27.3-alpine AS builder
 RUN apk add --no-cache tzdata upx
 WORKDIR /app
 COPY go.* ./
